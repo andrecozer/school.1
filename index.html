@@ -1,124 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Escola de Informática</title>
   </head>
-  <body  class ="bg-[#3d3d3d] max-w-7xl m-auto">
-<header class="py-8 bg-[#4d4d4d] text-white text-center md:bg-red-800 lg:bg-green-600"
-<div>
-  
-  <h4 class="mb-2 font-bold text-xl">🏠ESCOLA DE INFORMÁTICA📘</h4>
-</div>
- 
+  <body class="bg-[#3d3d3d] max-w-7xl mx-auto">
+    
+    <header class="py-8 bg-[#4d4d4d] text-white text-center md:bg-red-800 lg:bg-green-600">
+      <div>
+        <h4 class="mb-2 font-bold text-xl">🏠 ESCOLA DE INFORMÁTICA 📘</h4>
+      </div>
+      <nav class="space-x-4">
+        <a href="#">Home</a>
+        <a href="#">Curso de HTML</a>
+        <a href="#">Curso CSS</a>
+        <a href="#">Curso JS</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
 
-
-  <nav class="space-x-2">
-  <a href="">Home</a>
-  <a href="/pages/curso_html.html">Curso de HTML</a>
-  <a href="">Curso CSS</a>
-  <a href="">Curso JS</a>
-  <a href="#">Contato</a>
-  </nav>
-  </header>
-
-  <div class="md:grid grid-cols-2 items-center"> 
-    <div>
-      <img src="/img/banner.svg" alt=""/>
-    </div>
-    <div class="text-center text-white">
-      <h3>UTFTEC</h3>
-      <h4>A MELHOR ESCOLA DE INFORMÁTICA</h4>
-      <button
-      class="px-4 py-2 mt-4 bg-white rounded-md text-black hover:bg-green-400"
-      >Informações
-    </button>
+    <div class="md:grid grid-cols-2 items-center p-4">
+      <div>
+        <img src="/img/banner.svg" alt="Banner da escola" />
+      </div>
+      <div class="text-center text-white">
+        <h3 class="text-2xl font-bold">UTFTEC</h3>
+        <h4 class="text-xl">A MELHOR ESCOLA DE INFORMÁTICA</h4>
+        <button class="px-4 py-2 mt-4 bg-white rounded-md text-black hover:bg-green-400">
+          Informações
+        </button>
+      </div>
     </div>
 
-<div class="text-center text-white mt-8 mb-4">
-<h3>CONHEÇA NOSSOS<span class="text-green-400">CURSOS</span></h3>
-</div>
-
-<main class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
-
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
+    <div class="text-center text-white mt-8 mb-4">
+      <h3 class="text-2xl font-bold">CONHEÇA NOSSOS <span class="text-green-400">CURSOS</span></h3>
     </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
 
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
-    </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
+    <main class="grid gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Exemplo de curso - repita ou substitua com outros cursos -->
+      <div class="bg-[#4d4d4d] rounded-lg pb-4">
+        <a href="/pages/curso_html.html">
+          <div>
+            <img src="/img/html.svg" alt="Curso HTML" class="mx-auto pt-4" />
+          </div>
+          <div class="text-center text-white px-2">
+            <h3 class="text-xl font-semibold">Curso de HTML</h3>
+            <p>Conheça o curso de HTML que vai te ensinar do zero ao avançado!</p>
+          </div>
+        </a>
+      </div>
 
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
-    </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
+      <!-- Você pode duplicar e alterar os dados abaixo para representar cursos diferentes -->
+      <!-- Curso CSS -->
+      <div class="bg-[#4d4d4d] rounded-lg pb-4">
+        <a href="/pages/curso_css.html">
+          <div>
+            <img src="/img/css.svg" alt="Curso CSS" class="mx-auto pt-4" />
+          </div>
+          <div class="text-center text-white px-2">
+            <h3 class="text-xl font-semibold">Curso de CSS</h3>
+            <p>Aprenda a estilizar páginas com CSS moderno e responsivo!</p>
+          </div>
+        </a>
+      </div>
 
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
-    </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
+      <!-- Curso JS -->
+      <div class="bg-[#4d4d4d] rounded-lg pb-4">
+        <a href="/pages/curso_js.html">
+          <div>
+            <img src="/img/js.svg" alt="Curso JS" class="mx-auto pt-4" />
+          </div>
+          <div class="text-center text-white px-2">
+            <h3 class="text-xl font-semibold">Curso de JavaScript</h3>
+            <p>Domine a linguagem da web com nosso curso completo de JS.</p>
+          </div>
+        </a>
+      </div>
+    </main>
 
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
-    </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
-
-<div class="bg-[#4d4d4d] rounded-lg pb-2">
-  <a href="/pages/curso_html.html">
-    <div>
-      <img src="/img/html.svg" alt="" />
-    </div>
-    <div class="text-center text-white">
-      <h3>Curso de HTML</h3>
-      <p>Conheça o curso de HTML que...</p>
-    </div>
-  </a>
-</div>
-
-
-
-</main>
-
-
-
+  </body>
 </html>
-</body>
